@@ -1,0 +1,63 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    font-size:95%;
+}
+
+html {
+    background-color:#eeeeee;
+}
+
+#activity_log {
+
+}
+
+#container {
+
+}
+
+#mvp_list {
+    display:inline-block;
+    width:11%;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#mvp_container {
+    display:inline-block;
+    width:11%;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#activity_log p{
+    border-bottom:1px solid black;
+}
+
+#mvp_list p{
+    padding-left:5px;
+    padding-right:5px;
+    border-bottom:1px solid black;
+}
+
+#mvp_container input{
+    width:50px;
+}
+
+.mvp {
+
+
+}
+
+.alive{
+    color:green;
+}
+
+.possible {
+    color:orange;
+}
+
+.dead {
+    color:red;
+}

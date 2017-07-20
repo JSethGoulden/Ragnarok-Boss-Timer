@@ -1,0 +1,15 @@
+#mainnav ul{list-style:none; margin-left: auto; margin-right: auto; width: 350px; padding-bottom: 40px;} 
+
+#mainnav ul li {float:left; padding: 10px;}
+
+#mainnav a{text-decoration:none; padding:5px; background:lightblue; border:solid; border-color:gray; border-width: 2px; border-radius:5px;}
+
+#mainnav a:link{font-size: 25px; color:black;}
+#mainnav a:visited{color:black; border:solid; border-color:gray; border-width: 2px; border-radius:5px;}
+#mainnav a:hover{opacity:.5; color: yellow; border:solid; border-color:gray; border-width: 2px; border-radius:5px;}
+
+#header {margin: auto; background-color: gray; width: 80%; height: 5px; margin-bottom: 10px; border-radius: 20px}
+#byct {margin: auto; text-align:center; font-size: 20px; background-color:rgba(102,178,255,.5); border-radius: 5px 5px 0 0; width:80%; height: 80%; margin-bottom: 10px; opacity: .8}
+#byct pre {font-family: arial;}
+
+#footer{margin: auto; background-color: gray; width: 80%; height: 5px; margin-bottom: 10px; border-radius: 20px;}

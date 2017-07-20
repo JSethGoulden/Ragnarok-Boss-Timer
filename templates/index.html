@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+        <link rel="shortcut icon" href="mob_mvp.ico" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+		<meta charset="utf-8"/>
+		<title>Ragnarok MvP Timer</title>
+		<script src="js/jq.js"></script>
+		<script src="js/main.js"></script>
+		<style>
+			.presentation {
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+        <div id="activity_log">
+        </div> 
+        <div id="container">
+            <div id="mvp_list">
+                <p>Quick Summary</p>
+                <p>Search: <input type="text" id="search" /></p>
+            </div>
+            <div id="mvp_container">
+                <div class="info">
+					<div class="presentation">
+                    <p style="color:red;">
+                        IMPORTANT !!! In order to manually set the time of an mvp, you must enter the difference in time of your computer's clock and the server time (@time ingame).
+                        For example, if your clock is 1 hour ahead of game time, enter 1. If you are 1 hour behind, enter -1. <br />
+                        Once account registration is setup, you'll only have to set this once, but for now you'll have to set it every time you go to the app.
+                    </p>
+                    <input type="text" id="serverOffset"> <button id="setServerOffset">Set</button> <span id="serverSet"> </span>
+					</div>
+                    <p>
+                        **This app uses a lot of HTML5 features, and as such browsers like Internet Explorer and Opera might not be able to use certain features or not work at all. Please use Firefox or Chrome
+                        to ensure browser compatability.
+                    </p>
+                    <div>
+                        A quick rundown of the site:
+                        <p style="font-weight:bold;">Activity Log(top of the app)</p>
+                        <p>The Activity Log periodically checks the server for updates, such as a fellow guildmate logging a kill on an MvP, and displays the new activity at the top of its log.</p>
+                        <p style="font-weight:bold;">Quick Summary(left side of the app)</p>
+                        <p>Displays the name of every MvP in the database and its current status(alive, dead, etc). Features a search bar to quickly filter through the mvps.</p>
+                        <p style="font-weight:bold;">Core app</p>
+                        <p>
+                            Each MvP entry in the database has its own block in the app. The blocks include a picture of the MvP, its name, the field it spawns in, the time it takes to respawn, <br />
+                            and its current status(e.g dead, alive). If the MvP is not alive, a timer will be displayed counting down. Once the timer has counted down to zero, the MvP has guaranteed <br />
+                            respawned since its last recorded death. <span style="font-weight:bold">Due to the nature of how MvPs respawn in Ragnarok Online, there is no fixed amount of time most MvPs respawn.</span> <br />
+                            Instead, most MvPs respawn between X and Y minutes after it has been killed. <span style="font-weight:bold;">When the timer has counted down to the MvP's "window" of respawning, the background of the <br />
+                            MvP's block will turn orange and an audio queue will be played. </span>
+                        </p>
+                        <p>
+                            The volume of the alert can be changed below.
+                        </p>
+                        <input id="volume" type="range" value="2"/> <span id="volumeNum">2</span>% <button id="testAlarm">Test </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

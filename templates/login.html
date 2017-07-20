@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+        <link rel="shortcut icon" href="mob_mvp.ico" />
+		<meta charset="utf-8"/>
+		<title>Ragnarok MvP Timer - Login</title>
+		<script src="js/jq.js"> </script>
+		<script src="js/login.js"> </script>
+		<link href="css/login_style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body> 
+        <form id="start" method="post" action="login.php">
+            <h1>%HEADER%</h1> 
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" />
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" />
+            </p>
+            <p>
+                <label for="guild">Guild</label>
+                <select id="guild" name="guild">
+                    %GUILDS%
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Login" />
+            </p>
+        </form>
+	</body>
+</html>
